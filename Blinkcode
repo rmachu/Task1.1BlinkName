@@ -1,0 +1,86 @@
+//Declaring dot and line functions 
+void dot(int pin);
+void line(int pin);
+
+void setup()
+{
+  pinMode(11, OUTPUT);
+}
+
+void loop()
+{
+  //R
+  dot(11);
+  //1 sec delay between each part of a letter
+  delay(1000);
+  line(11);
+  delay(1000);
+  dot(11);
+  
+  //3 sec delay between each letter
+  delay(3000);
+  
+  //A
+  dot(11);
+  delay(1000);
+  line(11);
+  
+  delay(3000);
+  
+  //C
+  line(11);
+  delay(1000);
+  dot(11);
+  delay(1000);
+  line(11);
+  delay(1000);
+  dot(11);
+  
+  delay(3000);
+  
+  
+  //H
+  dot(11);
+  delay(1000);
+  dot(11);
+  delay(1000);
+  dot(11);
+  delay(1000);
+  dot(11);
+  
+  delay(3000);
+  
+  //E
+  dot(11);
+  
+  delay(3000);
+  
+  //L
+  dot(11);
+  delay(1000);
+  line(11);
+  delay(1000);
+  dot(11);
+  delay(1000);
+  dot(11);
+  
+  delay(7000);
+  
+}
+
+//Creating the functions 
+//dot
+void dot(int pin)
+{
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+}
+
+//line
+void line(int pin)
+{
+  digitalWrite(pin, HIGH);
+  delay(3000);
+  digitalWrite(pin, LOW);
+}
