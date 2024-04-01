@@ -1,68 +1,71 @@
+//define pin for LED
+#define blueLED 2
 //Declaring dot and line functions 
 void dot(int pin);
 void line(int pin);
 
+
 void setup()
 {
-  pinMode(11, OUTPUT);
+  pinMode(blueLED, OUTPUT);
 }
 
 void loop()
 {
   //R
-  dot(11);
+  dot(blueLED);
   //1 sec delay between each part of a letter
   delay(1000);
-  line(11);
+  line(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   
   //3 sec delay between each letter
   delay(3000);
   
   //A
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  line(11);
+  line(blueLED);
   
   delay(3000);
   
   //C
-  line(11);
+  line(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  line(11);
+  line(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   
   delay(3000);
   
   
   //H
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   
   delay(3000);
   
   //E
-  dot(11);
+  dot(blueLED);
   
   delay(3000);
   
   //L
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  line(11);
+  line(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   delay(1000);
-  dot(11);
+  dot(blueLED);
   
   delay(7000);
   
